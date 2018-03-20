@@ -1,0 +1,25 @@
+module muxUla (
+clk,
+regOrExtensor,
+saidaReg,
+saidaExtensor,
+saidaDado
+);
+
+input clk;
+input [31:0] saidaReg;
+input [31:0] saidaExtensor;
+input regOrExtensor;
+
+output reg [31:0] saidaDado;
+
+always @ (posedge clk) begin
+	if(regOrExtensor == 0)
+	saidaDado = saidaReg;
+	else
+	saidaDado = saidaExtensor;
+end
+
+
+
+endmodule

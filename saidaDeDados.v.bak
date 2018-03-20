@@ -1,0 +1,31 @@
+module saidaDeDados(
+clk,
+controle,
+dado_reg_1,
+dado_reg_2,
+dado_reg_result,
+saida_1,
+saida_2,
+saida_result
+);
+
+input controle, clk;
+input [31:0] dado_reg_1;
+input [31:0] dado_reg_2;
+input [31:0] dado_reg_result;
+
+always @ (posedge clk) begin
+	if (controle) begin
+		saida_1 = dado_reg_1;
+		saida_2 = dado_reg_2;
+		saida_result = dado_reg_result;
+	end	
+end
+
+output reg [31:0] saida_1;
+output reg [31:0] saida_2;
+output reg [31:0] saida_result;
+
+
+endmodule
+

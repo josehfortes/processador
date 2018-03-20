@@ -1,0 +1,16 @@
+module somadorInstrucoes(
+clk,
+end_atual,
+end_saida
+);
+	input clk;
+	input [31:0] end_atual;
+	
+	output reg [31:0] end_saida;
+
+	always @ (posedge clk) begin
+		end_saida <= end_atual+1;
+	end
+
+
+endmodule

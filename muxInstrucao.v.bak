@@ -1,0 +1,24 @@
+module muxInstrucao(
+controle,
+branch,
+endereco_branch,
+endereco_instrucao,
+endereco_saida
+);
+	input controle, branch;
+	input [31:0] endereco_branch;
+	input [31:0] endereco_instrucao;
+	output reg [31:0] endereco_saida;
+	
+	always (controle or branch or endereco_branch or endereco_instrucao) begin
+		if(controle == 1'b1)
+			begin
+				if (branch == 1'b1)
+					endereco_saida = endereco_branch;
+				else
+					endereco_saida = endereco_instrucao;
+			end
+		else
+			endereco_saida = endereco_instrucao;	
+	end
+endmodule

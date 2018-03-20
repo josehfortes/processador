@@ -1,0 +1,17 @@
+module tabelaProcessos(
+clk,
+);
+
+input clk;
+
+reg [31:0] tabela[11:0][10:0];
+integer clockInicio = 0;
+
+always @ (posedge clk) begin
+	
+end
+
+assign dado_saida = mem_ram[endereco];
+
+
+endmodule

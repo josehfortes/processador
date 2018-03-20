@@ -1,0 +1,21 @@
+module muxRegistradores(
+dado_ula,
+dado_memoria,
+controle,
+saida);
+
+	input [31:0] dado_ula;
+	input [31:0] dado_memoria;
+	input controle;
+	
+	output reg [31:0] saida;
+	always @ (dado_ula or dado_memoria or controle) begin
+		if(controle == 1'b0)
+			saida = dado_ula;
+		else
+			saida = dado_memoria;
+	
+	end
+
+
+endmodule

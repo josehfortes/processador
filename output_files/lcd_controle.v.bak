@@ -1,0 +1,13 @@
+module lcd_controle (
+clk,
+lcd_blon,
+lcd_on,
+lcd_rs,
+lcd_rw,
+lcd_en,
+lcd_entrada,
+lcd_saida
+);
+
+input clk,
+input [7:0] lcd_entrada;

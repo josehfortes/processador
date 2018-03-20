@@ -1,0 +1,32 @@
+module entradaDeDados(
+chave,
+botao,
+saida_dado,
+controle,
+flag
+);
+
+input [7:0] chave;
+input botao;
+input controle;
+
+output [31:0] saida_dado;
+output flag = 1'b0;
+
+always @ (botao or controle)begin
+	if(controle == 1'b1) begin
+		always @ (posedge(botao))
+			begin
+				if(chave[7] == 0) begin
+					saida_dado = chave + 32'd0;
+					flag = 1'b1;
+				end
+				else begin
+					saida_dado = chave + 32'b11111111111111111111111100000000;
+					flag = 1'b1;				
+				end
+			end
+	end
+end
+
+endmodule

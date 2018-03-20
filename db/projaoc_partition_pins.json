@@ -1,0 +1,313 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LuzEntradaClock",
+					"strict" : false
+				},
+				{
+					"name" : "LUZ_ENTRADA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LUZ_ENTRADA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LUZ_ENTRADA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LUZ_ENTRADA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LUZ_ENTRADA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LUZ_ENTRADA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LUZ_ENTRADA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LUZ_ENTRADA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA1DEZENA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA1DEZENA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA1DEZENA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA1DEZENA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA1DEZENA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA1DEZENA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA1DEZENA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA1UNIDADE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA1UNIDADE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA1UNIDADE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA1UNIDADE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA1UNIDADE[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA1UNIDADE[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA1UNIDADE[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA2DEZENA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA2DEZENA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA2DEZENA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA2DEZENA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA2DEZENA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA2DEZENA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA2DEZENA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA2UNIDADE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA2UNIDADE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA2UNIDADE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA2UNIDADE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA2UNIDADE[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA2UNIDADE[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA2UNIDADE[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3CENTENA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3CENTENA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3CENTENA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3CENTENA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3CENTENA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3CENTENA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3CENTENA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3DEZENA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3DEZENA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3DEZENA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3DEZENA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3DEZENA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3DEZENA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3DEZENA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3MILHAR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3MILHAR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3MILHAR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3MILHAR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3MILHAR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3MILHAR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3MILHAR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3UNIDADE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3UNIDADE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3UNIDADE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3UNIDADE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3UNIDADE[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3UNIDADE[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SAIDA3UNIDADE[6]",
+					"strict" : false
+				},
+				{
+					"name" : "CHAVE[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CHAVE[6]",
+					"strict" : false
+				},
+				{
+					"name" : "CHAVE[5]",
+					"strict" : false
+				},
+				{
+					"name" : "CHAVE[4]",
+					"strict" : false
+				},
+				{
+					"name" : "CHAVE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CHAVE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CHAVE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "CHAVE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "BotaoEntrada",
+					"strict" : false
+				},
+				{
+					"name" : "botaoClock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

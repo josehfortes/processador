@@ -1,0 +1,42 @@
+module MIEntradaSaida (
+clk,
+end_mem,
+saida_instrucao
+);
+
+// INPUTS
+input clk;
+input [31:0]end_mem;
+
+// OUTPUTS
+output [31:0] saida_instrucao;
+
+// VARIAVEIS INTERNAS
+integer clockInicio = 0;
+reg[31:0] mem_instrucoes [0:160];
+
+always @ (posedge clk) begin
+	if (clockInicio == 0) begin
+
+	
+	
+	mem_instrucoes[0] = {6'b101000, 26'd0}; //nop
+mem_instrucoes[1] = {6'b000001, 5'd1, 21'd5}; //addi reg 1 = 5
+mem_instrucoes[2] = {6'b000001, 5'd2, 21'd1}; //addi reg 2 = 1
+//mem_instrucoes[8] = {6'b000001, 5'd1, 21'd5}; //addi
+mem_instrucoes[3] = {6'b111100, 5'd2, 5'd1, 16'd0}; //HDIN
+mem_instrucoes[4] = {6'b100001, 5'd1, 5'd1, 16'd0}; //HDOUT
+
+
+
+
+
+	
+		clockInicio <= 1'b1;
+		
+	end
+end
+
+assign saida_instrucao = mem_instrucoes[end_mem];
+
+endmodule

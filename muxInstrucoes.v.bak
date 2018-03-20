@@ -1,0 +1,20 @@
+module muxInstrucoes(
+dado_bios,
+dado_inst,
+controle,
+saida
+);
+
+input [31:0] dado_bios, dado_inst;
+input controle;
+
+output reg [4:0] saida;
+
+always @(dado_bios or dado_inst or controle) begin
+	if(controle)
+		saida = dado_bios;
+	else
+		saida = dado_inst;
+end
+
+endmodule

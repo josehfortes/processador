@@ -1,0 +1,12 @@
+module muxBranch(
+controle,
+endereco_extensor,
+endereco_ula,
+endereco_saida
+);
+
+input controle;
+input [31:0] endereco_extensor;
+input [31:0] endereco_ula;
+
+output reg [31:0] endereco_saida;

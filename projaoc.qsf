@@ -1,0 +1,234 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 32-bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+# Date created = 10:36:10  May 18, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		projaoc_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY projaoc
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:36:10  MAY 18, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "/home-local/aluno/Documentos/jh/processador" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_AB28 -to BotaoEntrada
+set_location_assignment PIN_AC24 -to CHAVE[7]
+set_location_assignment PIN_AB24 -to CHAVE[6]
+set_location_assignment PIN_AB23 -to CHAVE[5]
+set_location_assignment PIN_AA24 -to CHAVE[4]
+set_location_assignment PIN_AA23 -to CHAVE[3]
+set_location_assignment PIN_AA22 -to CHAVE[2]
+set_location_assignment PIN_Y24 -to CHAVE[1]
+set_location_assignment PIN_Y23 -to CHAVE[0]
+set_location_assignment PIN_Y2 -to clock
+set_location_assignment PIN_AA14 -to SAIDA1DEZENA[6]
+set_location_assignment PIN_AG18 -to SAIDA1DEZENA[5]
+set_location_assignment PIN_AF17 -to SAIDA1DEZENA[4]
+set_location_assignment PIN_AH17 -to SAIDA1DEZENA[3]
+set_location_assignment PIN_AG17 -to SAIDA1DEZENA[2]
+set_location_assignment PIN_AE17 -to SAIDA1DEZENA[1]
+set_location_assignment PIN_AD17 -to SAIDA1DEZENA[0]
+set_location_assignment PIN_AC17 -to SAIDA1UNIDADE[6]
+set_location_assignment PIN_AA15 -to SAIDA1UNIDADE[5]
+set_location_assignment PIN_AB15 -to SAIDA1UNIDADE[4]
+set_location_assignment PIN_AB17 -to SAIDA1UNIDADE[3]
+set_location_assignment PIN_AA16 -to SAIDA1UNIDADE[2]
+set_location_assignment PIN_AB16 -to SAIDA1UNIDADE[1]
+set_location_assignment PIN_AA17 -to SAIDA1UNIDADE[0]
+set_location_assignment PIN_AH18 -to SAIDA2DEZENA[6]
+set_location_assignment PIN_AF18 -to SAIDA2DEZENA[5]
+set_location_assignment PIN_AG19 -to SAIDA2DEZENA[4]
+set_location_assignment PIN_AH19 -to SAIDA2DEZENA[3]
+set_location_assignment PIN_AB18 -to SAIDA2DEZENA[2]
+set_location_assignment PIN_AC18 -to SAIDA2DEZENA[1]
+set_location_assignment PIN_AD18 -to SAIDA2DEZENA[0]
+set_location_assignment PIN_AE18 -to SAIDA2UNIDADE[6]
+set_location_assignment PIN_AF19 -to SAIDA2UNIDADE[5]
+set_location_assignment PIN_AE19 -to SAIDA2UNIDADE[4]
+set_location_assignment PIN_AH21 -to SAIDA2UNIDADE[3]
+set_location_assignment PIN_AG21 -to SAIDA2UNIDADE[2]
+set_location_assignment PIN_AA19 -to SAIDA2UNIDADE[1]
+set_location_assignment PIN_AB19 -to SAIDA2UNIDADE[0]
+set_location_assignment PIN_Y19 -to SAIDA3MILHAR[6]
+set_location_assignment PIN_AF23 -to SAIDA3MILHAR[5]
+set_location_assignment PIN_AD24 -to SAIDA3MILHAR[4]
+set_location_assignment PIN_AA21 -to SAIDA3MILHAR[3]
+set_location_assignment PIN_AB20 -to SAIDA3MILHAR[2]
+set_location_assignment PIN_U21 -to SAIDA3MILHAR[1]
+set_location_assignment PIN_V21 -to SAIDA3MILHAR[0]
+set_location_assignment PIN_W28 -to SAIDA3CENTENA[6]
+set_location_assignment PIN_W27 -to SAIDA3CENTENA[5]
+set_location_assignment PIN_Y26 -to SAIDA3CENTENA[4]
+set_location_assignment PIN_W26 -to SAIDA3CENTENA[3]
+set_location_assignment PIN_Y25 -to SAIDA3CENTENA[2]
+set_location_assignment PIN_AA26 -to SAIDA3CENTENA[1]
+set_location_assignment PIN_AA25 -to SAIDA3CENTENA[0]
+set_location_assignment PIN_U24 -to SAIDA3DEZENA[6]
+set_location_assignment PIN_U23 -to SAIDA3DEZENA[5]
+set_location_assignment PIN_W25 -to SAIDA3DEZENA[4]
+set_location_assignment PIN_W22 -to SAIDA3DEZENA[3]
+set_location_assignment PIN_W21 -to SAIDA3DEZENA[2]
+set_location_assignment PIN_Y22 -to SAIDA3DEZENA[1]
+set_location_assignment PIN_M24 -to SAIDA3DEZENA[0]
+set_location_assignment PIN_H22 -to SAIDA3UNIDADE[6]
+set_location_assignment PIN_J22 -to SAIDA3UNIDADE[5]
+set_location_assignment PIN_L25 -to SAIDA3UNIDADE[4]
+set_location_assignment PIN_L26 -to SAIDA3UNIDADE[3]
+set_location_assignment PIN_E17 -to SAIDA3UNIDADE[2]
+set_location_assignment PIN_F22 -to SAIDA3UNIDADE[1]
+set_location_assignment PIN_G18 -to SAIDA3UNIDADE[0]
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_location_assignment PIN_L4 -to lcd_en
+set_location_assignment PIN_M2 -to lcd_rs
+set_location_assignment PIN_M1 -to lcd_rw
+set_location_assignment PIN_M5 -to lcd_saida[7]
+set_location_assignment PIN_M3 -to lcd_saida[6]
+set_location_assignment PIN_K2 -to lcd_saida[5]
+set_location_assignment PIN_K1 -to lcd_saida[4]
+set_location_assignment PIN_K7 -to lcd_saida[3]
+set_location_assignment PIN_L2 -to lcd_saida[2]
+set_location_assignment PIN_L1 -to lcd_saida[1]
+set_location_assignment PIN_L3 -to lcd_saida[0]
+set_location_assignment PIN_H15 -to LUZ_ENTRADA[0]
+set_location_assignment PIN_G16 -to LUZ_ENTRADA[1]
+set_location_assignment PIN_G15 -to LUZ_ENTRADA[2]
+set_location_assignment PIN_F15 -to LUZ_ENTRADA[3]
+set_location_assignment PIN_H17 -to LUZ_ENTRADA[4]
+set_location_assignment PIN_J16 -to LUZ_ENTRADA[5]
+set_location_assignment PIN_H16 -to LUZ_ENTRADA[6]
+set_location_assignment PIN_J15 -to LUZ_ENTRADA[7]
+set_location_assignment PIN_G19 -to LUZ_BOTAOINPUT
+set_global_assignment -name SAVE_DISK_SPACE OFF
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS OFF
+set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name OPTIMIZATION_MODE BALANCED
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS OFF
+set_global_assignment -name OPTIMIZE_HOLD_TIMING OFF
+set_global_assignment -name OPTIMIZE_TIMING OFF
+set_global_assignment -name FITTER_EFFORT "FAST FIT"
+set_location_assignment PIN_M23 -to botaoClock
+set_location_assignment PIN_E21 -to LuzEntradaClock
+set_global_assignment -name VERILOG_FILE DeBounce.v
+set_global_assignment -name VERILOG_FILE memoriaRegistradores.v
+set_global_assignment -name VERILOG_FILE bancoDeMemoria.v
+set_global_assignment -name VERILOG_FILE memoriaInstrucoes.v
+set_global_assignment -name VERILOG_FILE programCounter.v
+set_global_assignment -name VERILOG_FILE extensorDeBits.v
+set_global_assignment -name VERILOG_FILE ula.v
+set_global_assignment -name VERILOG_FILE somadorInstrucoes.v
+set_global_assignment -name VERILOG_FILE muxUla.v
+set_global_assignment -name VERILOG_FILE muxInstrucao.v
+set_global_assignment -name BDF_FILE projaoc.bdf
+set_global_assignment -name VERILOG_FILE muxRegistradores.v
+set_global_assignment -name VERILOG_FILE muxBranch.v
+set_global_assignment -name VERILOG_FILE unidadeControle.v
+set_global_assignment -name VERILOG_FILE saidaDeDados.v
+set_global_assignment -name VERILOG_FILE saidaDoisDisplays.v
+set_global_assignment -name VERILOG_FILE saidaQuatroDisplays.v
+set_global_assignment -name VERILOG_FILE doisDisplays.v
+set_global_assignment -name VERILOG_FILE quatroDisplays.v
+set_global_assignment -name VERILOG_FILE muxDadoReg3.v
+set_global_assignment -name VERILOG_FILE entradaDeDados.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform9.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform10.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform11.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform12.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform13.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform14.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform15.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform16.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform17.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform18.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform19.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform20.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform21.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform22.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform23.vwf
+set_global_assignment -name VERILOG_FILE freqdivider.v
+set_global_assignment -name VERILOG_FILE top.v
+set_global_assignment -name VERILOG_FILE muxClock.v
+set_global_assignment -name VERILOG_FILE HD.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform24.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform25.vwf
+set_global_assignment -name VERILOG_FILE MIEntradaSaida.v
+set_global_assignment -name VERILOG_FILE muxInstrucoes.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE testeSaidaInstrucoes.vwf
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform26.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform27.vwf
+set_global_assignment -name VERILOG_FILE tabelaProcessos.v
+set_global_assignment -name VERILOG_FILE contexto.v
+set_global_assignment -name VERILOG_FILE muxContexto.v
+set_global_assignment -name VERILOG_FILE contextoInstrucao.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform28.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform29.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform30.vwf
+set_global_assignment -name VERILOG_FILE temporizador.v
+set_global_assignment -name VERILOG_FILE muxHDContext.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform31.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform32.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform33.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform34.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform35.vwf
+set_global_assignment -name CDF_FILE output_files/Chain2.cdf
+set_global_assignment -name CDF_FILE output_files/Chain3.cdf
+set_global_assignment -name CDF_FILE output_files/Chain14.cdf
+set_global_assignment -name VERILOG_FILE output_files/muxSaida.v
+set_global_assignment -name CDF_FILE output_files/Chain4.cdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

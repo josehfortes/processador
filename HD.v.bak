@@ -1,0 +1,27 @@
+module HD(
+clk,
+endereco,
+dado_escrita,
+dado_saida,
+escrita
+);
+
+input clk;
+input escrita;
+input [31:0] endereco;
+input [31:0] dado_escrita; //primeiro reg
+
+output [31:0] dado_saida;
+
+reg [31:0] HD[100:0];
+
+always @ (posedge clk) begin
+	if(escrita) begin
+		HD[endereco] <= dado_escrita;
+	end
+end
+
+assign dado_saida = HD[endereco];
+
+
+endmodule

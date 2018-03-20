@@ -1,0 +1,50 @@
+module saidaQuatroDisplays(numero, milhar, centena, dezena, unidade);
+	input [31:0] numero;
+	output reg [3:0] milhar;
+	output reg [3:0] centena;
+	output reg [3:0] dezena;
+	output reg [3:0] unidade;
+	reg [31:0] aux;
+	integer i;
+	always @ (numero) begin
+		aux = 32'b0;
+		milhar = 4'b0000;
+		centena = 4'b0000;
+		dezena = 4'b0000;
+		unidade = 4'b0000;
+		if(numero[15] == 0) begin
+			for(i = 15; i >= 0; i = i-1) begin
+				if(milhar >= 5) milhar = milhar + 4'd3;
+				if(centena >= 5) centena = centena + 4'd3;
+				if(dezena >= 5) dezena = dezena + 4'd3;
+				if(unidade >= 5) unidade = unidade + 4'd3;
+				milhar = milhar << 1;
+				milhar[0] = centena[3];				
+				centena = centena << 1;
+				centena[0] = dezena[3];
+				dezena = dezena << 1;
+				dezena[0] = unidade[3];
+				unidade = unidade << 1;
+				unidade[0] = numero[i];
+			end
+		end
+		else begin
+			aux = ~(numero) + 16'b0000000000000001;
+			for(i = 15; i >= 0; i = i-1) begin
+				if(milhar >= 5) milhar = milhar + 4'd3;
+				if(centena >= 5) centena = centena + 4'd3;
+				if(dezena >= 5) dezena = dezena + 4'd3;
+				if(unidade >= 5) unidade = unidade + 4'd3;
+				milhar = milhar << 1;
+				milhar[0] = centena[3];				
+				centena = centena << 1;
+				centena[0] = dezena[3];
+				dezena = dezena << 1;
+				dezena[0] = unidade[3];
+				unidade = unidade << 1;
+				unidade[0] = aux[i];
+			end
+		end
+	end
+	
+endmodule

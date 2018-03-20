@@ -1,0 +1,57 @@
+module ula(
+clk,
+dado_1,
+dado_2,
+result,
+branch,
+alu_op
+);
+
+input clk;
+input [31:0] dado_1;
+input [31:0] dado_2;
+
+input [5:0] alu_op;
+
+output reg [31:0] result;
+output reg branch;
+
+always @ (alu_op or dado_1 or dado_2) begin
+		case (alu_op[5:0])
+			
+			// Aritmetica
+			6'b000000: result = dado_1 + dado_2; // soma com 2 regs
+			6'b000001: result = dado_1 + dado_2; // soma de imediato com um reg
+			6'b000010: result = dado_1 - dado_2; // subtrai com 2 regs
+			6'b000011: result = dado_1 - dado_2; // subtrai um imediato com um reg
+			
+			//logica
+			6'b001000: result = dado_1 & dado_2; // AND
+			6'b001001: result = dado_1 & dado_2; // ANDI
+			6'b001010: result = dado_1 | dado_2; // OR
+			6'b001011: result = dado_1 | dado_2; // ORI
+			6'b001100: result = ~dado_1; // NOT
+			6'b001101: result = dado_1 ^ dado_2; // XOR
+			
+			//deslocamento
+			6'b010000: result = dado_1 << dado_2; // SLL
+			6'b010001: result = dado_1 >> dado_2; // SRL
+			
+			//branch
+			6'b011000: if (dado_1 == dado_2) branch <= 1'b1;
+			else branch <= 1'b0;
+			
+			6'b011001: if (dado_1 != dado_2) branch <= 1'b1;
+			else branch <= 1'b0;
+			
+			6'b011010: if (dado_1 > dado_2) branch <= 1'b1;
+			else branch <= 1'b0;
+			
+			6'b011011: if (dado_1 < dado_2) branch <= 1'b1;
+			else branch <= 1'b0;
+			
+		endcase
+		
+	end
+	
+endmodule
