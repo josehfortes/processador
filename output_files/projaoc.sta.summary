@@ -2,28 +2,28 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Setup 'clock'
-Slack : -156.087
-TNS   : -1160.677
-
 Type  : Setup 'freqdivider:inst21|count[20]'
-Slack : -154.323
-TNS   : -957158.336
+Slack : -151.271
+TNS   : -1005661.521
+
+Type  : Setup 'clock'
+Slack : -151.048
+TNS   : -1124.849
 
 Type  : Setup 'unidadeControle:inst1|saida_dados[0]'
-Slack : -15.586
-TNS   : -117.997
+Slack : -15.649
+TNS   : -116.199
 
 Type  : Hold 'clock'
-Slack : -2.762
-TNS   : -2.762
+Slack : -2.814
+TNS   : -2.814
 
 Type  : Hold 'freqdivider:inst21|count[20]'
-Slack : -0.405
-TNS   : -0.405
+Slack : 0.403
+TNS   : 0.000
 
 Type  : Hold 'unidadeControle:inst1|saida_dados[0]'
-Slack : 3.246
+Slack : 3.195
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'clock'
@@ -35,7 +35,7 @@ Slack : -2.693
 TNS   : -83938.223
 
 Type  : Minimum Pulse Width 'unidadeControle:inst1|saida_dados[0]'
-Slack : 0.425
+Slack : 0.410
 TNS   : 0.000
 
 ------------------------------------------------------------

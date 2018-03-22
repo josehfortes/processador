@@ -391,7 +391,7 @@ begin : INIT*/
 	//REG 28 = auxiliar que armazena o contexto atual
 	//REG 29 = salva o PC
 	//REG 30 = auxiliar de salvar contexto
-
+	//mem_instrucoes[0][340] = {6'b111010, 5'd1, 5'd1, 5'd1, 11'd0};//output reg1
 	mem_instrucoes[0][341] = {6'b000001, 5'd30, 21'd1}; //addi reg 30 = 1
 	mem_instrucoes[0][342] = {6'b111100, 5'd28, 5'd30, 5'd1, 11'd0}; //hdin PRIMEIRO CONTEXTO SEGUNDO ENDERECO TERCEIRO ESCRITA
 	mem_instrucoes[0][343] = {6'b000001, 5'd30, 21'd2}; //addi reg 30 = 2
@@ -547,15 +547,53 @@ begin : INIT*/
 	mem_instrucoes[0][471] = {6'b111101, 5'd28, 5'd30, 5'd27, 11'd0}; //hd out - o contexto é o REG 1, ENDERECO É O REG 2 e o output é o REG 3
 	mem_instrucoes[0][474] = {6'b000001, 5'd30, 21'd29}; //addi reg 30 = 29
 	mem_instrucoes[0][475] = {6'b111101, 5'd28, 5'd30, 5'd29, 11'd0}; //hd out - o contexto é o REG 1, ENDERECO É O REG 2 e o output é o REG 3
-
+	
 	mem_instrucoes[0][478] = {6'b000001, 5'd30, 21'd31}; //addi reg 30 = 31
 	mem_instrucoes[0][479] = {6'b111101, 5'd28, 5'd30, 5'd31, 11'd0}; //hd out - o contexto é o REG 1, ENDERECO É O REG 2 e o output é o REG 3
-
+	//mem_instrucoes[0][480] = {6'b111010, 5'd1, 5'd1, 5'd1, 11'd0};//output REG1
+	
+	
+	//mem_instrucoes[0][480] = {6'b111010, 5'd29, 5'd29, 5'd29, 11'd0};//output pc
+	//mem_instrucoes[0][481] = {6'b101000, 26'd0}; //nop
 	mem_instrucoes[0][482] = {6'b111111, 5'd29,5'd28,16'd0};//o primeior reg é o endereço do branch, o segundo reg é o prox contexto
+	
+	
+	/*
+	mem_instrucoes[1][0] = {6'b101000, 26'd0}; //nop
+	mem_instrucoes[1][1] = {6'b000001, 5'd1, 21'd1}; //addi
+	mem_instrucoes[1][2] = {6'b111010, 5'd1, 5'd1, 5'd1, 11'd0}; //out3
+	mem_instrucoes[1][3] = {6'b101000, 26'd0}; //nop
+	mem_instrucoes[1][4] = {6'b000001, 5'd1, 21'd2}; //addi
+	mem_instrucoes[1][5] = {6'b111010, 5'd1, 5'd1, 5'd1, 11'd0}; //out3
+	mem_instrucoes[1][6] = {6'b101000, 26'd0}; //nop
+	mem_instrucoes[1][7] = {6'b000001, 5'd1, 21'd3}; //addi
+	mem_instrucoes[1][8] = {6'b111010, 5'd1, 5'd1, 5'd1, 11'd0}; //out3
+	mem_instrucoes[1][9] = {6'b101000, 26'd0}; //nop
+	
+	mem_instrucoes[2][0] = {6'b101000, 26'd0}; //nop
+	mem_instrucoes[2][1] = {6'b000001, 5'd1, 21'd11}; //addi
+	mem_instrucoes[2][2] = {6'b111010, 5'd1, 5'd1, 5'd1, 11'd0}; //out3
+	mem_instrucoes[2][3] = {6'b101000, 26'd0}; //nop
+	mem_instrucoes[2][4] = {6'b000001, 5'd1, 21'd12}; //addi
+	mem_instrucoes[2][5] = {6'b111010, 5'd1, 5'd1, 5'd1, 11'd0}; //out3
+	mem_instrucoes[2][6] = {6'b101000, 26'd0}; //nop
+	mem_instrucoes[2][7] = {6'b000001, 5'd1, 21'd13}; //addi
+	mem_instrucoes[2][8] = {6'b111010, 5'd1, 5'd1, 5'd1, 11'd0}; //out3
+	mem_instrucoes[2][9] = {6'b101000, 26'd0}; //nop
+	
+	mem_instrucoes[3][0] = {6'b101000, 26'd0}; //nop
+	mem_instrucoes[3][1] = {6'b000001, 5'd1, 21'd21}; //addi
+	mem_instrucoes[3][2] = {6'b111010, 5'd1, 5'd1, 5'd1, 11'd0}; //out3
+	mem_instrucoes[3][3] = {6'b101000, 26'd0}; //nop
+	mem_instrucoes[3][4] = {6'b000001, 5'd1, 21'd22}; //addi
+	mem_instrucoes[3][5] = {6'b111010, 5'd1, 5'd1, 5'd1, 11'd0}; //out3
+	mem_instrucoes[3][6] = {6'b101000, 26'd0}; //nop
+	mem_instrucoes[3][7] = {6'b000001, 5'd1, 21'd23}; //addi
+	mem_instrucoes[3][8] = {6'b111010, 5'd1, 5'd1, 5'd1, 11'd0}; //out3
+	mem_instrucoes[3][9] = {6'b101000, 26'd0}; //nop
+	*/
 
-
-
-
+	
 	// potencia de 2 
 	mem_instrucoes[1][0] = {6'b101000, 26'd0}; //nop
 	mem_instrucoes[1][1] = {6'b011100, 26'd34}; //ir para main
@@ -624,7 +662,8 @@ begin : INIT*/
 	mem_instrucoes[1][64] = {6'b100000, 5'd31, 5'd31, 16'd0}; //lw
 	mem_instrucoes[1][65] = {6'b111010, 5'd31, 5'd31, 5'd31, 11'd0}; //out3
 
-
+	
+	
 	// potencia de 2
 	mem_instrucoes[2][0] = {6'b101000, 26'd0}; //nop
 	mem_instrucoes[2][1] = {6'b011100, 26'd34}; //ir para main
@@ -692,8 +731,9 @@ begin : INIT*/
 	mem_instrucoes[2][63] = {6'b000001, 5'd31, 21'd3}; //addi
 	mem_instrucoes[2][64] = {6'b100000, 5'd31, 5'd31, 16'd0}; //lw
 	mem_instrucoes[2][65] = {6'b111010, 5'd31, 5'd31, 5'd31, 11'd0}; //out3
+	
 
-
+	
 	// potencia de 2
 	mem_instrucoes[3][0] = {6'b101000, 26'd0}; //nop
 	mem_instrucoes[3][1] = {6'b011100, 26'd34}; //ir para main
@@ -761,7 +801,8 @@ begin : INIT*/
 	mem_instrucoes[3][63] = {6'b000001, 5'd31, 21'd3}; //addi
 	mem_instrucoes[3][64] = {6'b100000, 5'd31, 5'd31, 16'd0}; //lw
 	mem_instrucoes[3][65] = {6'b111010, 5'd31, 5'd31, 5'd31, 11'd0}; //out3
-
+	
+	
 	clockInicio <= 1'b1;
 	end
 end

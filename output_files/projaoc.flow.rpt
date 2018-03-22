@@ -1,6 +1,6 @@
 Flow report for projaoc
-Tue Mar 20 18:43:16 2018
-Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Wed Mar 21 21:21:41 2018
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2016  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -29,34 +29,35 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Flow Summary                                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 20 18:43:16 2018           ;
-; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
-; Revision Name                      ; projaoc                                         ;
-; Top-level Entity Name              ; projaoc                                         ;
-; Family                             ; Cyclone IV E                                    ;
-; Device                             ; EP4CE115F29C7                                   ;
-; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 81,961 / 114,480 ( 72 % )                       ;
-;     Total combinational functions  ; 50,020 / 114,480 ( 44 % )                       ;
-;     Dedicated logic registers      ; 65,376 / 114,480 ( 57 % )                       ;
-; Total registers                    ; 65376                                           ;
-; Total pins                         ; 76 / 529 ( 14 % )                               ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 13,056 / 3,981,312 ( < 1 % )                    ;
-; Embedded Multiplier 9-bit elements ; 6 / 532 ( 1 % )                                 ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
-+------------------------------------+-------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Wed Mar 21 21:21:41 2018       ;
+; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                      ; projaoc                                     ;
+; Top-level Entity Name              ; projaoc                                     ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 81,960 / 114,480 ( 72 % )                   ;
+;     Total combinational functions  ; 50,019 / 114,480 ( 44 % )                   ;
+;     Dedicated logic registers      ; 65,376 / 114,480 ( 57 % )                   ;
+; Total registers                    ; 65376                                       ;
+; Total pins                         ; 76 / 529 ( 14 % )                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 13,056 / 3,981,312 ( < 1 % )                ;
+; Embedded Multiplier 9-bit elements ; 6 / 532 ( 1 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,7 +65,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/20/2018 18:30:03 ;
+; Start date & time ; 03/21/2018 21:07:21 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; projaoc             ;
 +-------------------+---------------------+
@@ -75,7 +76,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+---------------------------------------------+--------------------+-------------+----------------+
 ; Assignment Name                     ; Value                                       ; Default Value      ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------------+--------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 141568271718711.152158140303255             ; --                 ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 10995770589201.152167724103884              ; --                 ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                          ; --                 ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; /home-local/aluno/Documentos/jh/processador ; --                 ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                 ; --                 ; --          ; eda_simulation ;
@@ -108,12 +109,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:03:24     ; 1.0                     ; 1427 MB             ; 00:03:33                           ;
-; Fitter                    ; 00:08:04     ; 1.0                     ; 1993 MB             ; 00:16:00                           ;
-; Assembler                 ; 00:00:11     ; 1.0                     ; 1052 MB             ; 00:00:10                           ;
-; TimeQuest Timing Analyzer ; 00:00:35     ; 1.0                     ; 1678 MB             ; 00:00:36                           ;
-; EDA Netlist Writer        ; 00:00:21     ; 1.0                     ; 1335 MB             ; 00:00:19                           ;
-; Total                     ; 00:12:35     ; --                      ; --                  ; 00:20:38                           ;
+; Analysis & Synthesis      ; 00:04:09     ; 1.0                     ; 1164 MB             ; 00:04:25                           ;
+; Fitter                    ; 00:08:18     ; 1.0                     ; 1907 MB             ; 00:16:45                           ;
+; Assembler                 ; 00:00:09     ; 1.0                     ; 846 MB              ; 00:00:09                           ;
+; TimeQuest Timing Analyzer ; 00:00:48     ; 1.1                     ; 1558 MB             ; 00:00:48                           ;
+; EDA Netlist Writer        ; 00:00:20     ; 1.0                     ; 862 MB              ; 00:00:20                           ;
+; Total                     ; 00:13:44     ; --                      ; --                  ; 00:22:27                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -122,11 +123,11 @@ refer to the applicable agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; D132609          ; Linux Mint ; 18         ; x86_64         ;
-; Fitter                    ; D132609          ; Linux Mint ; 18         ; x86_64         ;
-; Assembler                 ; D132609          ; Linux Mint ; 18         ; x86_64         ;
-; TimeQuest Timing Analyzer ; D132609          ; Linux Mint ; 18         ; x86_64         ;
-; EDA Netlist Writer        ; D132609          ; Linux Mint ; 18         ; x86_64         ;
+; Analysis & Synthesis      ; pcjh             ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; pcjh             ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; pcjh             ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; pcjh             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; pcjh             ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 

@@ -1,9 +1,9 @@
-Warning (10268): Verilog HDL information at memoriaInstrucoes.v(19): always construct contains both blocking and non-blocking assignments File: /home-local/aluno/Downloads/processador/memoriaInstrucoes.v Line: 19
-Warning (10273): Verilog HDL warning at unidadeControle.v(87): extended using "x" or "z" File: /home-local/aluno/Downloads/processador/unidadeControle.v Line: 87
-Warning (10273): Verilog HDL warning at unidadeControle.v(106): extended using "x" or "z" File: /home-local/aluno/Downloads/processador/unidadeControle.v Line: 106
-Warning (10273): Verilog HDL warning at unidadeControle.v(125): extended using "x" or "z" File: /home-local/aluno/Downloads/processador/unidadeControle.v Line: 125
-Warning (10273): Verilog HDL warning at unidadeControle.v(144): extended using "x" or "z" File: /home-local/aluno/Downloads/processador/unidadeControle.v Line: 144
-Warning (10273): Verilog HDL warning at unidadeControle.v(163): extended using "x" or "z" File: /home-local/aluno/Downloads/processador/unidadeControle.v Line: 163
-Warning (10273): Verilog HDL warning at unidadeControle.v(182): extended using "x" or "z" File: /home-local/aluno/Downloads/processador/unidadeControle.v Line: 182
-Warning (10268): Verilog HDL information at MIEntradaSaida.v(29): always construct contains both blocking and non-blocking assignments File: /home-local/aluno/Downloads/processador/MIEntradaSaida.v Line: 29
-Warning (10268): Verilog HDL information at temporizador.v(27): always construct contains both blocking and non-blocking assignments File: /home-local/aluno/Downloads/processador/temporizador.v Line: 27
+Warning (10268): Verilog HDL information at memoriaInstrucoes.v(19): always construct contains both blocking and non-blocking assignments File: C:/SO/processador/memoriaInstrucoes.v Line: 19
+Warning (10273): Verilog HDL warning at unidadeControle.v(87): extended using "x" or "z" File: C:/SO/processador/unidadeControle.v Line: 87
+Warning (10273): Verilog HDL warning at unidadeControle.v(106): extended using "x" or "z" File: C:/SO/processador/unidadeControle.v Line: 106
+Warning (10273): Verilog HDL warning at unidadeControle.v(125): extended using "x" or "z" File: C:/SO/processador/unidadeControle.v Line: 125
+Warning (10273): Verilog HDL warning at unidadeControle.v(144): extended using "x" or "z" File: C:/SO/processador/unidadeControle.v Line: 144
+Warning (10273): Verilog HDL warning at unidadeControle.v(163): extended using "x" or "z" File: C:/SO/processador/unidadeControle.v Line: 163
+Warning (10273): Verilog HDL warning at unidadeControle.v(182): extended using "x" or "z" File: C:/SO/processador/unidadeControle.v Line: 182
+Warning (10268): Verilog HDL information at MIEntradaSaida.v(29): always construct contains both blocking and non-blocking assignments File: C:/SO/processador/MIEntradaSaida.v Line: 29
+Warning (10268): Verilog HDL information at temporizador.v(27): always construct contains both blocking and non-blocking assignments File: C:/SO/processador/temporizador.v Line: 27
