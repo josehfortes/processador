@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Wed Mar 21 23:17:13 2018
+Analysis & Synthesis Status : Successful - Tue Apr 03 00:35:41 2018
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : projaoc
 Top-level Entity Name : projaoc
 Family : Cyclone IV E
-Total logic elements : 115,081
-    Total combinational functions : 50,020
-    Dedicated logic registers : 65,376
-Total registers : 65376
+Total logic elements : 93,530
+    Total combinational functions : 41,269
+    Dedicated logic registers : 52,576
+Total registers : 52576
 Total pins : 76
 Total virtual pins : 0
 Total memory bits : 13,056

@@ -56,7 +56,7 @@ always @ (posedge clk) begin
 		
 		mem_instrucoes[0] = {6'b101000, 26'd0}; //nop
 		mem_instrucoes[1] = {6'b000110, 5'd29, 21'd0}; //addpc - salva o pc no reg 29
-		mem_instrucoes[2] = {6'b000001, 5'd28, 21'd337}; //addi reg 1 = - endereco do branch
+		mem_instrucoes[2] = {6'b000001, 5'd28, 21'd201}; //addi reg 28 = - endereco do branch
 		
 		mem_instrucoes[3] = {6'b000001, 5'd30, 21'd0}; //addi reg 2 = - proximo contexto
 		mem_instrucoes[4] = {6'b111111, 5'd28,5'd30,16'd0};//o primeior reg é o endereço do branch, o segundo reg é o prox contexto
